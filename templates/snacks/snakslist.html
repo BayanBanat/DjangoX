@@ -1,20 +1,24 @@
 {% extends '_base.html' %}
 {% load static %}
-{% block css %}
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-{% endblock%}
 {% block title%} list of snack{% endblock %}
+{% block css %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+{% endblock%}
+
 {% block nav %}
     <a href="{% url 'createsnaks'%}" class="nav-link px-2 link-secondary">Create Snack</a>
 {% endblock %}
 
 {% block content%}
 <h1>Snacks List</h1>
+
 <div class="snack-list">
     {% for snack in object_list %}
-    <div class="div2 card-{{ forloop.counter }}">
+    <div class="div2 card-{{ forloop.counter }}" >
         
-        <a href="{% url 'snaksdetail' snack.pk %}">
+        <a href="{% url 'snaksdetail' snack.pk %}" class="alink">
             <h3 id="h3home" class="title-{{ forloop.counter }}">{{ snack.title }}</h3>
             {% if snack.title == 'Mansaf' %}
                 <img class="imglist" src="https://www.cheftariq.com/wp-content/uploads/2020/04/mansaf-4-1.jpg" alt="Type 1 Image">
