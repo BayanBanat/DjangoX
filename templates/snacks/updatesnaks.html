@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock%}
+{% load crispy_forms_tags %}
+
+{% block title%} Update Snack{% endblock %}
+{% block content%}
+<h1>Update {{snack.title}}</h1>
+<section class="create">
+    <div class="divcreate">
+        <form method="post" class="uniForm">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="SAVE">
+        </form>
+    </div>
+    <div class="divcreate1">
+        <img src="https://c8.alamy.com/compfr/2pe0kg3/aliments-de-restauration-rapide-texte-illustration-coloree-2pe0kg3.jpg">
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,292 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+  }
+/*   
+  header {
+    display: flex;
+    align-items: center;
+  } */
+  
+  .logo {
+    flex: 1; 
+    
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #1f1f1f; 
+    color: #000;
+    margin-left: 20px;
+    
+
+  }
+  .nav li {
+    margin-right: 10px;
+  }
+
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 2px ;
+ 
+  }
+  
+  .nav-link:hover {
+    background-color: #f5f095;
+  }
+  
+
+  
+  
+  
+  #desc {
+    max-width: 600px;
+    word-wrap: break-word;
+  }
+  
+  
+  .div2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  
+  }
+  #logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  
+  h3 {
+    font-size: 19px;
+    margin: 40px;
+    color: #2d2929;
+  }
+  
+  img {
+    width: 500px;
+    height: 500px;
+    margin: 40px;
+    border-radius: 20%;
+  }
+  .snack-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+  a {
+    text-decoration: underline;
+    text-decoration: none;
+    color: #000000;
+    
+  }
+  
+  .card-1 {
+    background-color: #d9d8d8;
+    border-radius: 20%;
+  }
+  
+  .card-2 {
+    background-color: #f8c8c8;
+    border-radius: 20%;
+  }
+  
+  .card-3 {
+    background-color: #f6d3be;
+    border-radius: 20%;
+  }
+  
+  .card-4 {
+    background-color: #d1d1f6;
+    border-radius: 20%;
+  }
+  
+  .card-5 {
+    background-color: #cdf4cd;
+    border-radius: 20%;
+  }
+  
+  .card-6 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-7 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-8 {
+    background-color: #f6d3be;
+    border-radius: 20%;
+  }
+  
+  .card-9 {
+    background-color: #d1d1f6;
+    border-radius: 20%;
+  }
+  
+  .card-10 {
+    background-color: #cdf4cd;
+    border-radius: 20%;
+  }
+  
+  .card-11 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-12 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-13 {
+    background-color: #cdf4cd;
+    border-radius: 20%;
+  }
+  
+  .card-14 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-15 {
+    background-color: #f6c5a6;
+    border-radius: 20%;
+  }
+  .card-1:hover,
+  .card-2:hover,
+  .card-3:hover,
+  .card-4:hover,
+  .card-5:hover,
+  .card-6:hover ,
+  .card-7:hover,
+  .card-8:hover,
+  .card-9:hover,
+  .card-10:hover,
+  .card-11:hover,
+  .card-12:hover,
+  .card-13:hover,
+  .card-14:hover,
+  .card-15:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .placeholder-image {
+    background-color: #d9d8d8;
+    border-radius: 20%;
+  }
+  
+  .placeholder-image:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .imglist{
+    width: 300px;
+    height: 200px;
+  }
+  #h3home{
+    font-size: 30px;
+  }
+  a:hover {
+    color: #f4d616;
+  }
+  
+  #img{
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    color:  #242424;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  
+  form {
+    margin: 50px;
+  }
+  
+  input[type="submit"] {
+    background-color: #f7e1c2;
+    color: rgb(20, 20, 20);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 270px;
+    
+  }
+  .create{
+    display: flex;
+    justify-content: space-between;
+  }
+  select{
+    background-color:  #f7ddb7;
+    width: 100%;
+    color: rgb(19, 18, 18);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f8ea52;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #f7ddb7;
+  }
+  
+  .divcreate{
+    width: 60%;
+  
+  }
+  .divcreate1{
+    width: 40%;
+    gap: 50px;
+  }
+
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    margin-left: 10px;
+    list-style-type: none;
+
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    /* background-color: antiquewhite; */
+    color: #474545;
+  }
